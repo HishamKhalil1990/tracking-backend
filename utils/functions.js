@@ -70,10 +70,6 @@ const getOrderInfo = async (username) => {
         name: "order 1",
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
-        origin: {
-          long: "31.814108",
-          lat: "36.019789",
-        },
         destination: {
           long: "31.824128",
           lat: "36.014328",
@@ -83,10 +79,6 @@ const getOrderInfo = async (username) => {
         name: "order 2",
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
-        origin: {
-          long: "31.814108",
-          lat: "36.019789",
-        },
         destination: {
           long: "31.824128",
           lat: "36.014328",
@@ -96,10 +88,6 @@ const getOrderInfo = async (username) => {
         name: "order 3",
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
-        origin: {
-          long: "31.814108",
-          lat: "36.019789",
-        },
         destination: {
           long: "31.824128",
           lat: "36.014328",
@@ -109,10 +97,6 @@ const getOrderInfo = async (username) => {
         name: "order 4",
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
-        origin: {
-          long: "31.814108",
-          lat: "36.019789",
-        },
         destination: {
           long: "31.824128",
           lat: "36.014328",
