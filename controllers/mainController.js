@@ -3,13 +3,13 @@ const functions = require('../utils/functions')
 const login = async(req,res) => {
     try{
         const {username,password,odometer} = req.body
-        const msg = functions.checkUserAndSaveOdo(username,password,odometer)
-        if(msg == 'done'){
-            const token = functions.create(username)
+        const msg = await functions.checkUserAndSaveOdo(username,password,odometer)
+        if(msg == 'logged'){
+            const auth = functions.create(username)
             res.send({
                 status:"success",
-                msg:"logged",
-                token
+                msg,
+                auth
             })
         }else{
             res.send({
@@ -26,6 +26,21 @@ const login = async(req,res) => {
     }
 }
 
+const getOrdersInfo = async(req,res) => {
+    const user = req.user
+    try{
+        const orderInfo = await functions.getOrderInfo(user.username)
+        res.send(orderInfo)
+    }catch(err){
+        console.log(err)
+        res.send({
+            status:"failed",
+            msg:"internal error"
+        })
+    }
+}
+
 module.exports = {
-    login
+    login,
+    getOrdersInfo
 }
