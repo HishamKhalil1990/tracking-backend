@@ -45,10 +45,10 @@ const checkUserAndSaveOdo = async (username, password, odometer) => {
     if (isSaved) {
       return "logged";
     } else {
-      return "could not save odometer";
+      return "لم يتم حفظ رقم العداد الرجاء المحاولة مرة اخرى";
     }
   } else {
-    return "could not check user";
+    return "الرجاء التاكد من اسم المستخدم او كلمة المرور";
   }
 };
 

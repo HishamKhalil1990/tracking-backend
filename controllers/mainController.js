@@ -21,7 +21,7 @@ const login = async(req,res) => {
         console.log(err)
         res.send({
             status:"failed",
-            msg:"internal error"
+            msg:"خطا داخلي اثناء عملية الدخول الرجاء المحاولة مرة اخرى"
         })
     }
 }
