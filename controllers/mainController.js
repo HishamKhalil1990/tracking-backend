@@ -27,8 +27,8 @@ const login = async(req,res) => {
 }
 
 const getOrdersInfo = async(req,res) => {
-    const user = req.user
     try{
+        const user = req.user
         const orderInfo = await functions.getOrderInfo(user.username)
         res.send(orderInfo)
     }catch(err){
@@ -40,7 +40,23 @@ const getOrdersInfo = async(req,res) => {
     }
 }
 
+const saveStatus = async(req,res) => {
+    try{
+        const {value} = req.params
+        const user = req.user
+        const msg = await functions.save(user.username,value)
+        res.send(msg)
+    }catch(err){
+        console.log(err)
+        res.send({
+            status:"failed",
+            msg:"internal error"
+        })
+    }
+}
+
 module.exports = {
     login,
-    getOrdersInfo
+    getOrdersInfo,
+    saveStatus
 }

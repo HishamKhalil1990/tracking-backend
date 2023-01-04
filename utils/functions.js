@@ -71,8 +71,8 @@ const getOrderInfo = async (username) => {
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
-          long: "31.824128",
-          lat: "36.014328",
+          lat: "31.824128",
+          long: "36.014328",
         },
       },
       {
@@ -80,8 +80,8 @@ const getOrderInfo = async (username) => {
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
-          long: "31.824128",
           lat: "36.014328",
+          long: "31.824128",
         },
       },
       {
@@ -89,8 +89,8 @@ const getOrderInfo = async (username) => {
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
-          long: "31.824128",
-          lat: "36.014328",
+          lat: "31.824128",
+          long: "36.014328",
         },
       },
       {
@@ -98,8 +98,8 @@ const getOrderInfo = async (username) => {
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
-          long: "31.824128",
-          lat: "36.014328",
+          lat: "31.824128",
+          long: "36.014328",
         },
       },
     ],
@@ -107,9 +107,25 @@ const getOrderInfo = async (username) => {
   ///////////////////////////////////////// for testing /////////////////////////////////////////
 };
 
+const save = async(username,status) => {
+  console.log(status);
+  if(status == 'arrived'){
+    return {
+      status:'success',
+      msg:'لقد تم حفظ الوصول'
+    }
+  }else if(status == 'finished'){
+    return {
+      status:'success',
+      msg:'لقد تم حفظ الانتهاء'
+    }
+  }
+}
+
 module.exports = {
   create,
   authentication,
   checkUserAndSaveOdo,
   getOrderInfo,
+  save
 };
