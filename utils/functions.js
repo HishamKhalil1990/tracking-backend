@@ -67,7 +67,11 @@ const getOrderInfo = async (username) => {
     status:"success",
     data: [
       {
-        name: "order 1",
+        name: "شركة محمد ابو زهيري",
+        no:'1111111',
+        region:"السابع",
+        qty:50,
+        price:500,
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
@@ -76,7 +80,11 @@ const getOrderInfo = async (username) => {
         },
       },
       {
-        name: "order 2",
+        name: "شركة محمد ابو زهيري",
+        no:'1111111',
+        region:"السابع",
+        qty:50,
+        price:500,
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
@@ -85,7 +93,11 @@ const getOrderInfo = async (username) => {
         },
       },
       {
-        name: "order 3",
+        name: "شركة محمد ابو زهيري",
+        no:'1111111',
+        region:"السابع",
+        qty:50,
+        price:500,
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
@@ -94,7 +106,11 @@ const getOrderInfo = async (username) => {
         },
       },
       {
-        name: "order 4",
+        name: "شركة محمد ابو زهيري",
+        no:'1111111',
+        region:"السابع",
+        qty:50,
+        price:500,
         description:
           "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
         destination: {
