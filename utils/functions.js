@@ -73,7 +73,7 @@ const getOrderInfo = async (username) => {
         qty:50,
         price:500,
         description:
-          "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
+          "بضاعة بقوليات (عدس وعدس مجروش) بالاضافة الى ارز مندي ومنتجات الباشا",
         destination: {
           lat: "31.824128",
           long: "36.014328",
@@ -81,12 +81,12 @@ const getOrderInfo = async (username) => {
       },
       {
         name: "شركة محمد ابو زهيري",
-        no:'1111111',
+        no:'2222222',
         region:"السابع",
         qty:50,
         price:500,
         description:
-          "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
+          "بضاعة بقوليات (عدس وعدس مجروش) بالاضافة الى ارز مندي ومنتجات الباشا",
         destination: {
           lat: "36.014328",
           long: "31.824128",
@@ -94,12 +94,12 @@ const getOrderInfo = async (username) => {
       },
       {
         name: "شركة محمد ابو زهيري",
-        no:'1111111',
+        no:'3333333',
         region:"السابع",
         qty:50,
         price:500,
         description:
-          "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
+          "بضاعة بقوليات (عدس وعدس مجروش) بالاضافة الى ارز مندي ومنتجات الباشا",
         destination: {
           lat: "31.824128",
           long: "36.014328",
@@ -107,12 +107,12 @@ const getOrderInfo = async (username) => {
       },
       {
         name: "شركة محمد ابو زهيري",
-        no:'1111111',
+        no:'4444444',
         region:"السابع",
         qty:50,
         price:500,
         description:
-          "ksjjfhga jsjkdkkdkdhfhf jsjsdjjdjslsllssdoodd nfjjsklsldkddkjjf kjfoiruryroaooa",
+          "بضاعة بقوليات (عدس وعدس مجروش) بالاضافة الى ارز مندي ومنتجات الباشا",
         destination: {
           lat: "31.824128",
           long: "36.014328",
