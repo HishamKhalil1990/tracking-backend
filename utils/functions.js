@@ -67,6 +67,7 @@ const getOrderInfo = async (username) => {
     status:"success",
     data: [
       {
+        id:0,
         name: "شركة محمد ابو زهيري",
         no:'1111111',
         region:"السابع",
@@ -80,6 +81,7 @@ const getOrderInfo = async (username) => {
         },
       },
       {
+        id:1,
         name: "شركة محمد ابو زهيري",
         no:'2222222',
         region:"السابع",
@@ -93,6 +95,7 @@ const getOrderInfo = async (username) => {
         },
       },
       {
+        id:2,
         name: "شركة محمد ابو زهيري",
         no:'3333333',
         region:"السابع",
@@ -106,6 +109,7 @@ const getOrderInfo = async (username) => {
         },
       },
       {
+        id:3,
         name: "شركة محمد ابو زهيري",
         no:'4444444',
         region:"السابع",
