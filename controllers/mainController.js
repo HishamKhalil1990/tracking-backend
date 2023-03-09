@@ -43,8 +43,24 @@ const getOrdersInfo = async(req,res) => {
 const saveStatus = async(req,res) => {
     try{
         const {value} = req.params
+        const {tripName,orderNo} = req.body
         const user = req.user
-        const msg = await functions.save(user.username,value)
+        const msg = await functions.save(user.username,value,tripName,orderNo)
+        res.send(msg)
+    }catch(err){
+        console.log(err)
+        res.send({
+            status:"failed",
+            msg:"internal error"
+        })
+    }
+}
+
+const location = async(req,res) => {
+    try{
+        const {tripName,location,orderNo} = req.body
+        const user = req.user
+        const msg = await functions.saveLocation(user.username,location,tripName,orderNo)
         res.send(msg)
     }catch(err){
         console.log(err)
@@ -58,5 +74,6 @@ const saveStatus = async(req,res) => {
 module.exports = {
     login,
     getOrdersInfo,
-    saveStatus
+    saveStatus,
+    location
 }

@@ -61,13 +61,14 @@ const saveOdometer = async (odometer) => {
 };
 
 const getOrderInfo = async (username) => {
-  console.log(username);
   ///////////////////////////////////////// for testing /////////////////////////////////////////
   return {
     status:"success",
     data: [
       {
         id:0,
+        status:'',
+        tripName:'',
         phone:'0795288265',
         name: "شركة محمد ابو زهيري",
         no:'1111111',
@@ -80,9 +81,12 @@ const getOrderInfo = async (username) => {
           lat: "31.824128",
           long: "36.014328",
         },
+        timeInterval:10000, // 10 seconds
       },
       {
         id:1,
+        status:'started',
+        tripName:'zaid-999',
         phone:'0795288265',
         name: "شركة محمد ابو زهيري",
         no:'2222222',
@@ -95,9 +99,12 @@ const getOrderInfo = async (username) => {
           lat: "36.014328",
           long: "31.824128",
         },
+        timeInterval:10000, // 10 seconds
       },
       {
         id:2,
+        status:'arrived',
+        tripName:'yousef-789',
         phone:'0795288265',
         name: "شركة محمد ابو زهيري",
         no:'3333333',
@@ -110,9 +117,12 @@ const getOrderInfo = async (username) => {
           lat: "31.824128",
           long: "36.014328",
         },
+        timeInterval:10000, // 10 seconds
       },
       {
         id:3,
+        status:'canceled',
+        tripName:'ahmad-456',
         phone:'0795288265',
         name: "شركة محمد ابو زهيري",
         no:'4444444',
@@ -125,25 +135,40 @@ const getOrderInfo = async (username) => {
           lat: "31.824128",
           long: "36.014328",
         },
+        timeInterval:10000, // 10 seconds
       },
     ],
   };
   ///////////////////////////////////////// for testing /////////////////////////////////////////
 };
 
-const save = async(username,status) => {
-  console.log(status);
-  if(status == 'arrived'){
-    return {
-      status:'success',
-      msg:'لقد تم حفظ الوصول'
-    }
-  }else if(status == 'finished'){
-    return {
-      status:'success',
-      msg:'لقد تم حفظ الانتهاء'
-    }
+const save = async(username,status,tripName,orderNo) => {
+  console.log(status,tripName,orderNo)
+  switch(status){
+    case 'started':
+      return {
+        status:'success',
+        tripName:'hisham-123'
+      }
+    case 'arrived':
+      return {
+        status:'success',
+        msg:'لقد تم حفظ الوصول'
+      }
+    case 'finished':
+      return {
+        status:'success',
+        msg:'لقد تم حفظ الانتهاء'
+      }
+    case 'canceled':
+      return {
+        status:'success',
+      }
   }
+}
+
+const saveLocation = async (username,location,tripName,orderNo) => {
+  console.log(username,location,tripName,orderNo)
 }
 
 module.exports = {
@@ -151,5 +176,6 @@ module.exports = {
   authentication,
   checkUserAndSaveOdo,
   getOrderInfo,
-  save
+  save,
+  saveLocation
 };
