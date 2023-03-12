@@ -69,7 +69,7 @@ const getOrderInfo = async (username) => {
         id:0,
         status:'',
         tripName:'',
-        phone:'0795288265',
+        phone:'0799999999',
         name: "شركة محمد ابو زهيري",
         no:'1111111',
         region:"السابع",
@@ -87,7 +87,7 @@ const getOrderInfo = async (username) => {
         id:1,
         status:'started',
         tripName:'zaid-999',
-        phone:'0795288265',
+        phone:'0798888888',
         name: "شركة محمد ابو زهيري",
         no:'2222222',
         region:"السابع",
@@ -105,7 +105,7 @@ const getOrderInfo = async (username) => {
         id:2,
         status:'arrived',
         tripName:'yousef-789',
-        phone:'0795288265',
+        phone:'0797777777',
         name: "شركة محمد ابو زهيري",
         no:'3333333',
         region:"السابع",
@@ -123,7 +123,7 @@ const getOrderInfo = async (username) => {
         id:3,
         status:'canceled',
         tripName:'ahmad-456',
-        phone:'0795288265',
+        phone:'0796666666',
         name: "شركة محمد ابو زهيري",
         no:'4444444',
         region:"السابع",
@@ -142,8 +142,8 @@ const getOrderInfo = async (username) => {
   ///////////////////////////////////////// for testing /////////////////////////////////////////
 };
 
-const save = async(username,status,tripName,orderNo) => {
-  console.log(status,tripName,orderNo)
+const save = async(username,status,tripName,orderNo,location) => {
+  console.log(status,tripName,orderNo,location)
   switch(status){
     case 'started':
       return {

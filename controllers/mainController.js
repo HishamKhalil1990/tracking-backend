@@ -43,9 +43,9 @@ const getOrdersInfo = async(req,res) => {
 const saveStatus = async(req,res) => {
     try{
         const {value} = req.params
-        const {tripName,orderNo} = req.body
+        const {tripName,orderNo,location} = req.body
         const user = req.user
-        const msg = await functions.save(user.username,value,tripName,orderNo)
+        const msg = await functions.save(user.username,value,tripName,orderNo,location)
         res.send(msg)
     }catch(err){
         console.log(err)
